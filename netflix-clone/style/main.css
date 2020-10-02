@@ -12,7 +12,8 @@
   font-family: "Arial", Times, serif;
 }
 
-/*elementos base*/
+/* Base */
+
 body {
   background: var(--preta);
   color: var(--white);
@@ -24,7 +25,7 @@ body {
 
 .header .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 60px;
@@ -46,15 +47,14 @@ body {
   color: var(--white);
 }
 
-/*filme principal*/
+/* Capa do filme principal */
+
 .filme-principal {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
     url("/img/capa-house.jpg");
-
   height: 400px;
   background-size: cover;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,12 +65,12 @@ body {
   width: 70%;
 }
 
-.filme-principal .descricao {
+.descricao {
   margin-top: 10px;
   margin-bottom: 40px;
 }
 
-.filme-principal .titulo {
+.titulo {
   margin-top: 15%;
   font-size: 40px;
   font-family: "Trebuchet MS", Arial, sans-serif;
@@ -81,8 +81,10 @@ body {
   border: none;
   color: white;
 
+  margin-top: 5px;
+  width: 300px;
+
   padding: 15px 30px;
-  margin-right: 15px;
   font-size: 12px;
 
   cursor: pointer;
@@ -98,6 +100,12 @@ body {
   color: var(--black);
 }
 
+/* Carrossel */
+
+.carrosel-filmes {
+  margin-top: 5px;
+}
+
 .box-filme {
   height: 100%;
   width: 100%;
@@ -106,11 +114,32 @@ body {
 }
 
 .box-filme:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all 0.5s;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
-.carrosel-filmes {
-  margin-top: 5px;
+/* Tablet Up */
+
+@media screen and (min-width: 768px) {
+  .header .container {
+    flex-direction: row;
+  }
+
+  .filme-principal {
+    height: 700px;
+  }
+
+  .botao {
+    margin: 0 15px 0;
+    width: auto;
+  }
+}
+
+/* Notebook Up */
+
+@media screen and (min-width: 1024px) {
+  .descricao {
+    width: 50%;
+  }
 }
