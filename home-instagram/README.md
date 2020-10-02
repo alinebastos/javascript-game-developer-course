@@ -6,8 +6,9 @@ Fiz algumas alterações, como:
 
 - Mobile First;
 - Onde eram para ser a tag `<a>` e estavam como `<span>` troquei para a tag correta;
-- Troquei o background-size dos logos para contain, pois um deles estava cortado no mobile, e adicionei o no-repeat, pois estava se repetindo no tablet/desktop;
-- Diminuí a largura do wrapper no desktop para ficar mais parecido esteticamente com a página original.
+- Troquei o background-size dos logos para `contain`, pois um deles estava cortado no mobile, e adicionei o `no-repeat`, pois estava se repetindo no tablet/desktop;
+- Diminuí a largura do wrapper no desktop para ficar mais parecido esteticamente com a página original;
+- Além de usar minha foto e meu username :)
 
 ### Os requisitos são:
 
